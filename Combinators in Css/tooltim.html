@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        .main{
+            margin: auto;
+            width: 30%;
+            text-align: center;
+        }
+        .infoamtion{           
+            text-align: center;
+            display: block;
+            visibility: hidden;
+            background: #000;
+            width: 40%;
+            margin: auto;
+        }
+        .main:hover ~.infoamtion{
+            visibility: visible;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>ToolTip</h1>
+
+    <div class="main">Hover me</div>
+    <span class="infoamtion">this is some information</span>
+</body>
+</html>

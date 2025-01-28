@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors(Combinator)</title>
+    <style>
+        /* Descendent selector css*/
+        body p{
+            color: blue;
+        }
+        /* Child combinator css */
+        .main>h2{
+            color: red;
+        }
+        /* Next-Sibling combinator */
+        .main p+span{
+            color: yellow;
+        }
+         /* Subsequent-sibling combinator */
+        h4 ~ h5{
+            color: red;
+            background-color: aqua;
+        }
+        /* Pseudo Combinator */
+        .before::before{
+            content: 'Hello World';
+            background-color: gray;
+        }
+        .after::after{
+            content: 'hellow world';
+            color: aquamarine;
+            background-color: red;
+        }
+
+        .hover_content{
+            position: relative;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Descendent Selector</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos sed porro mollitia reiciendis dolores, hic necessitatibus praesentium, repudiandae adipisci obcaecati alias. Dicta corrupti deleniti maxime quidem, quibusdam enim eius.</h1>
+       <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos, quae nemo officia doloremque eum commodi culpa natus quasi. Repudiandae similique quidem at vitae cumque accusantium ab impedit officia. Deleniti?</h4>
+        <h2>Child Combinator</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis hic totam inventore repudiandae quis exercitationem natus asperiores, eius quas consequuntur deserunt placeat, doloremque officia? Beatae iusto aut expedita enim?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora veniam repellendus quo praesentium nobis, reiciendis saepe minus eos dolorum est ipsa laboriosam! Ratione, modi blanditiis animi distinctio voluptas nemo omnis?</p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ad ipsam necessitatibus, exercitationem odit quod ducimus corporis magni id saepe quasi obcaecati cupiditate nam, debitis numquam dolore voluptates eum aperiam?
+        Quas, nam fugiat quae, exercitationem officiis nihil perspiciatis quod provident libero illo quia id numquam recusandae porro repellendus rem atque. Tempore maxime iusto est ducimus sint exercitationem sit tenetur corporis?
+        Eligendi nihil maxime sed recusandae explicabo et debitis? Praesentium, commodi atque excepturi deserunt porro iure autem nihil nisi, adipisci quia rerum assumenda doloremque natus a voluptate recusandae. Possimus, aut veniam?
+        Porro, possimus officia, vel reiciendis aperiam, voluptatem quis commodi voluptates pariatur dignissimos nemo? Autem illo laboriosam dicta similique quia tenetur deserunt alias! Id quaerat, quod eveniet accusamus a consequuntur quis!
+        Repellat illum, ex iusto necessitatibus dicta consectetur dolores beatae omnis eius. Ullam repellat aut officia blanditiis sequi, beatae unde, repudiandae fugit voluptatem debitis cupiditate deserunt maxime saepe quae, ratione in?</span>
+
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos sed porro mollitia reiciendis dolores, hic necessitatibus praesentium, repudiandae adipisci obcaecati alias. Dicta corrupti deleniti maxime quidem, quibusdam enim eius.</h5>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat, aut maiores quas provident in quibusdam ut adipisci iste! Quasi modi, totam repellendus animi dignissimos molestias eius voluptate veniam tenetur.
+    Excepturi non earum necessitatibus obcaecati eligendi fuga, quidem vel itaque ex tempora commodi beatae ipsum cum ipsa odio doloremque molestias. Numquam possimus quae porro odio dignissimos eius, laboriosam corrupti repudiandae!
+    Corrupti libero minus fugit vitae nam omnis, fugiat nulla qui molestiae. Velit, impedit architecto ut quam cupiditate aliquam unde eius, illum totam voluptatibus ab suscipit? Repudiandae explicabo sint earum necessitatibus?</p>
+    
+    <div>   
+        <h4>heading4</h4>
+        <h5>heading5</h5>
+        <h5>heading5</h5>
+        <h5>heading5</h5>
+        <h5>heading5</h5>
+    </div>
+    <div class="before">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem perferendis dolorum consequuntur veniam, obcaecati voluptatibus facilis tempore eos qui illum accusantium ducimus nihil error, debitis, quod voluptates. In, suscipit labore.
+    </div>
+    <div class="after">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sint doloribus molestias ullam quidem molestiae consequuntur impedit nihil nobis velit pariatur vero, facilis delectus dolore eveniet necessitatibus similique? Impedit, amet!
+    </div>
+
+
+    <h1 class="tooltip" style="position: relative; left: 300px;">ToolTip</h1>
+
+    <span class="hover_content">Hover over me</span>
+    <div class="tooltip_main">
+        <span class="tooltip_text">Tooltip Text</span>
+    </div>
+</body>
+</html>
