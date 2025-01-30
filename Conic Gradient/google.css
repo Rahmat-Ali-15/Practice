@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://media.istockphoto.com/id/1360408960/vector/realistic-starry-night-sky-galaxy-background-abstract-constellation-background-with-nebula.jpg?s=612x612&w=0&k=20&c=jRiMFd_-cW1i1eKvSDbNEpR6pf2xiwtIorKjV4N3z0k=');
+    background-size: cover;
+
+}
+.google{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    
+}
+.google h1{
+    font-size: 23rem;
+    font-family: sans-serif;
+    position: relative;
+    left: 20px;
+    background-image: conic-gradient(from -25deg at 21% 54%,red 0deg,red 90deg,blue 90deg, blue 180deg,green 180deg, green 270deg,yellow 270deg,yellow 360deg);
+    background-clip: text;
+    color: transparent;
+}

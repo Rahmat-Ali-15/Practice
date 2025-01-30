@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://media.istockphoto.com/id/1360408960/vector/realistic-starry-night-sky-galaxy-background-abstract-constellation-background-with-nebula.jpg?s=612x612&w=0&k=20&c=jRiMFd_-cW1i1eKvSDbNEpR6pf2xiwtIorKjV4N3z0k=');
+    background-size: cover;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 18px;
+    float: left;
+    border-radius: 50%;
+}
+.a{
+    background-image: conic-gradient(red, green,yellow);
+}
+.b{
+    background-image: conic-gradient(from 45deg,red, green,yellow);
+}
+.c{
+    background-image: conic-gradient(red, green,yellow,red);
+}
+.d{
+    background-image: repeating-conic-gradient(red 30deg,blue 60deg, yellow 75deg);
+}
+.e{
+    background-image: repeating-conic-gradient(red 0deg,red 30deg, yellow 30deg,yellow 60deg);
+}
+.f{
+    background-image: repeating-conic-gradient(rgb(146, 146, 23) 0deg,yellow 10deg, yellow 20deg,red 20deg, rgb(226, 202, 22) 30deg, red 40deg, rgb(16, 200, 41) 40deg, rgb(220, 10, 94) 60deg);
+}
+.g{
+    background-image: conic-gradient(red 310deg,yellow 75deg);
+}
+.h{
+    background-image: repeating-conic-gradient(rgba(0,0,0,0) 0deg,rgba(0,0,0,0) 20deg,rgba(0,0,0,0.5) 20deg,rgba(0,0,0,0.5) 40deg);
+    background-color: yellow;
+}
+.i{
+    background-image: repeating-conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg);
+    background-size: 20px 20px;
+}
+.j{
+    background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg,blue 180deg, blue 270deg,green 270deg, green 360deg);
+}
+.k{
+    background-image: repeating-conic-gradient(red 0deg,yellow 30deg);
+}
