@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: #433f3f;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "one one two three"
+                         "four five five six"
+                         "seven seven seven seven";
+}
+ #item_one{
+    grid-area: one;
+    background-color: blue;
+}
+ #item_two{
+    grid-area: two;
+    background-color: red;
+}
+#item_three{
+    grid-area: three;
+    background-color: rgb(215, 115, 115);
+}
+#item_four{
+    grid-area: four;
+    background-color: rgb(129, 101, 25);
+}
+#item_five{
+    grid-area: five;
+    background-color: rgb(215, 115, 115);
+}
+#item_six{
+    grid-area: six;
+    background-color: rgb(173, 15, 129);
+}
+#item_seven{
+    grid-area: seven;
+    background-color: rgb(89, 171, 7);
+}
+/* #item_eight{
+    grid-area: eight;
+    background-color: rgb(121, 12, 131);
+}
+#item_nine{
+    grid-area: nine;
+    background-color: rgb(199, 175, 175);
+}
+#item_ten{
+    grid-area: ten;
+    background-color: rgb(167, 192, 6);
+}
+#item_eleven{
+    grid-area: eleven;
+    background-color: gray;
+}
+#item_twelve{
+    grid-area: twelve;
+    background-color: cyan;
+} */
